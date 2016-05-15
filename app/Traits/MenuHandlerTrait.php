@@ -354,8 +354,8 @@ trait MenuHandlerTrait
         $url = $this->generateUrl($menu);
         // Get the current URL.
         $currentUrl = $this->getCurrentUrl();
-
-        $variables = [  'URL'         => $url,
+        
+        $variables = [  'URL'         => url($url),
                         'ICON'        => $icon,
                         'LABEL'       => $menu->label,
                         'CURRENT_URL' => $currentUrl ];
